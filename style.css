@@ -125,6 +125,10 @@ span {
     font-size: 1.6rem;
 }
 
+#p2 {
+    display: none;
+}
+
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -418,6 +422,14 @@ span {
         padding: 2rem 3%;
     }
 
+    #p1 {
+        display: none;
+    }
+
+    #p2 {
+        display: block;
+    }
+
     section {
         padding: 10rem 3% 2rem;
     }
@@ -516,6 +528,18 @@ span {
 }
 
 @media (max-width: 617px) {
+
+    .home-content {
+        padding-top: 50px;
+    }
+
+    .eu {
+       padding-top: 70px;
+    }
+
+    .home-content h3 {
+        padding-top: 10px;
+    }
 
     .portifolio-container {
         grid-template-columns: 1fr;
