@@ -530,7 +530,7 @@ span {
 @media (max-width: 617px) {
 
     .home-content {
-        padding-top: 50px;
+        padding-top: 100px;
     }
 
     .eu {
@@ -547,6 +547,10 @@ span {
 
     #contato {
         flex-direction: column;
+    }
+
+    .about-content {
+        padding-top: 100px;
     }
 
 
