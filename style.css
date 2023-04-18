@@ -9,6 +9,20 @@
     font-family: 'poppins', sans-serif;
 }
 
+@keyframes eu {
+    0% {
+        margin-top: 20px;
+    }
+
+    50% {
+        margin-top: 40px;
+    }
+
+    100% {
+        margin-top: 20px;
+    }
+}
+
 :root {
     --bg-color: #1f242d;
     --second-bg-color: #1f242d;
@@ -37,7 +51,7 @@ header {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background-color: rgb(28, 24, 24);
+    background-color: #1a1f29;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,6 +70,7 @@ header.sticky {
 }
 
 .navBar a {
+    position: relative;
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
@@ -63,6 +78,12 @@ header.sticky {
 }
 
 .navBar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
     background-color: var(--main-color);
     border-radius: 5px;
     transform-origin: left;
@@ -113,6 +134,14 @@ span {
 .eu {
     max-width: 350px;
     max-height: 500px;
+    border-radius: 20px;
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 2rem var(--main-color);
+}
+
+.eu2 {
+    animation: eu 2s infinite ease-in-out;
 }
 
 .home-content h1 {
