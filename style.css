@@ -116,7 +116,7 @@ header.sticky {
     margin-bottom: 2rem;
 }
 
-span {
+ span {
     color: var(--main-color);
 }
 
@@ -140,7 +140,7 @@ span {
     box-shadow: 0 0 2rem var(--main-color);
 }
 
-.eu2 {
+.euAnimado {
     animation: eu 2s infinite ease-in-out;
 }
 
@@ -198,14 +198,34 @@ span {
 
 .about {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 2rem;
     background-color: var(--second-bg-color);
+    padding-bottom: 6rem;
 }
 
-.about img {
-    width: 35vw;
+.heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.about-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 80%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
 }
 
 .heading {
@@ -213,17 +233,23 @@ span {
     font-size: 4.5rem;
 }
 
-.about-content h2 {
-    text-align: left;
-    line-height: 1.2;
+.about-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
 }
 
-.about-content h3 {
-    font-size: 2.6rem;
+.about-content {
+    text-align: center;
 }
 
 .about-content p {
-    font-size: 1.6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 2rem;
     margin: 2rem 0 3rem;
 }
 
@@ -539,7 +565,11 @@ span {
         padding-top: 5rem;
     }
 
-    .eu2{
+    .euAnimado{
+        display: none;
+    }
+
+    .eu{
         display: none;
     }
 
@@ -562,12 +592,12 @@ span {
         padding-top: 100px;
     }
 
-    .eu {
-       padding-top: 70px;
-    }
-
     .home-content h3 {
         padding-top: 10px;
+    }
+
+    .about {
+        padding-top: 5px;
     }
 
     .portifolio-container {
@@ -581,21 +611,4 @@ span {
     .about-content {
         padding-top: 100px;
     }
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
