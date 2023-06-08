@@ -617,29 +617,6 @@ header.sticky {
     }
 
     .home-img img {
-        padding-top: 15rem;
-        width: 70vw;
-        margin-top: 4rem;
-    }
-
-    .about {
-        flex-direction: column-reverse;
-    }
-
-    .about img {
-        width: 70vw;
-        margin-top: 4rem;
-    }
-
-    .about-content {
-        padding-top: 5rem;
-    }
-
-    .euAnimado{
-        display: none;
-    }
-
-    .eu{
         display: none;
     }
 
@@ -681,19 +658,15 @@ header.sticky {
 
 @media (max-width: 435px) {
 
-    .home{
-        flex-direction: column-reverse;
-    }
-
     .home-content {
-        margin-top: 100px;
+        margin-top: 10px;
     }
 
     .home-img img {
-        margin-top: -60px;
-        width: 65vw;
-        background: none;
-        box-shadow: none;
-        height: 550px;
+    display: none;
+    }
+
+    .about-img {
+        display: none;
     }
 }
