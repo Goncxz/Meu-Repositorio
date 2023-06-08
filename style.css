@@ -192,14 +192,11 @@ header.sticky {
 .home-img img {
     width: 35vw;
     max-width: 350px;
-    max-height: 500px;
     border-radius: 20px;
     background: var(--main-color);
     color: var(--second-bg-color);
     box-shadow: 0 0 2rem var(--main-color);
 }
-
-
 
 .home-content h1 {
     font-size: 5.6rem;
@@ -243,7 +240,7 @@ header.sticky {
     background: var(--main-color);
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
-    transform: translatey(-3px);
+    transform: translateY(-3px);
     transition: 0.3s all;
 }
 
@@ -661,10 +658,6 @@ header.sticky {
 
 @media (max-width: 617px) {
 
-    .home-content {
-        padding-top: 100px;
-    }
-
     .home-content h3 {
         padding-top: 10px;
     }
@@ -683,5 +676,24 @@ header.sticky {
 
     .about-content {
         padding-top: 100px;
+    }
+}
+
+@media (max-width: 435px) {
+
+    .home{
+        flex-direction: column-reverse;
+    }
+
+    .home-content {
+        margin-top: 100px;
+    }
+
+    .home-img img {
+        margin-top: -60px;
+        width: 65vw;
+        background: none;
+        box-shadow: none;
+        height: 550px;
     }
 }
