@@ -669,4 +669,17 @@ header.sticky {
     .about-img {
         display: none;
     }
+
+    .about {
+        margin-top: 50px;
+    }
+
+    .heading {
+        margin-bottom: 5px;
+    }
+
+    .about-content p {
+        margin-top: 5px;
+    }
+
 }
